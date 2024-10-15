@@ -1,4 +1,8 @@
 /* Base styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   margin: 0;
   padding: 0;
@@ -13,30 +17,11 @@ body {
 }
 
 /* Utility classes */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .text-center {
   text-align: center;
 }
 
-.mt-1 {
-  margin-top: 1rem;
+.landing-page-section {
+  background-color: #f4f4f4;
+  height: 50vh;
 }
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
-/* Add more utility classes as needed */
