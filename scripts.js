@@ -100,7 +100,7 @@ class Controller {
 
     async loadInitialData() {
         const coinsListParams = {};
-        const coinPrice = { fsym: 'BTC,ETH', tsyms: 'USD,JPY,EUR' };
+        const coinPrice = { fsyms: 'BTC,ETH', tsyms: 'USD,JPY,EUR' };
         const newsParams = { lang: 'EN' };
         const top10CoinsParams = { limit: 10, tsym: 'USD' };
 
