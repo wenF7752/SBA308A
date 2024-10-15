@@ -53,7 +53,7 @@ export const fetchNews = async (params) => {
 
 export const fetchTop10Coins = async (params) => {
     try {
-        const response = await axiosInstance.get('/data/top/totalvol', {
+        const response = await axiosInstance.get('/data/top/totalvolfull', {
             params: {
                 ...params,
                 api_key: API_KEY  // Include api_key in params
