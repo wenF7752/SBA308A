@@ -13,10 +13,7 @@ class Model {
         this.#coinPrices = {};
 
     }
-    addData(item) {
-        // This is an example of adding data (you can adjust it to your needs)
-        this.#coinsList[item.id] = item;
-    }
+
     getData() {
         return {
             coinsList: this.#coinsList,
@@ -132,7 +129,7 @@ class View {
                <tr>
                 <th>${coin.CoinInfo.Name}</th>
                 <td>${coin.CoinInfo.FullName}</td>
-                <td>${coin.RAW && coin.RAW.USD && coin.RAW.USD.PRICE ? coin.RAW.USD.PRICE.toLocaleString() + ' $' : 'No data available'}</td>
+                <td>${coin.RAW && coin.RAW.USD && coin.RAW.USD.PRICE ? coin.RAW.USD.PRICE.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 8 }) + ' $' : 'No data available'}</td>
                 <td>${coin.RAW && coin.RAW.USD && coin.RAW.USD.VOLUME24HOURTO ?
                     coin.RAW.USD.VOLUME24HOURTO.toLocaleString() + ' $' : 'No data available'}
                  </td>

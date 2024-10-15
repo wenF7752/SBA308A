@@ -1,0 +1,18 @@
+# SBA 308A - Crypto Info Website
+
+This project is a simple web application that displays real-time cryptocurrency prices, news, and a list of the top 20 coins by volume. It uses external APIs to fetch data for Bitcoin (BTC), Ethereum (ETH), and Binance Coin (BNB), and updates dynamically on the page.
+
+## Features
+
+- Display current cryptocurrency prices in USD, EUR, and JPY.
+- Show a list of the top 20 cryptocurrencies by trading volume.
+- Fetch and display the latest crypto news.
+- Responsive design with Tailwind CSS and DaisyUI for UI components.
+
+## Technologies
+
+- **Frontend:** HTML, CSS (Tailwind CSS, DaisyUI)
+- **JavaScript Framework:** Vanilla JavaScript (ES6+)
+- **HTTP Requests:** Axios
+- **Cryptocurrency Data API:** [CryptoCompare API](https://min-api.cryptocompare.com)
+- **News API:** [CryptoCompare News API](https://min-api.cryptocompare.com/documentation#news)
