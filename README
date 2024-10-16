@@ -7,6 +7,7 @@ This project is a simple web application that displays real-time cryptocurrency 
 - Display current cryptocurrency prices in USD, EUR, and JPY.
 - Show a list of the top 20 cryptocurrencies by trading volume.
 - Fetch and display the latest crypto news.
+- Fetch coin signals
 - Responsive design with Tailwind CSS and DaisyUI for UI components.
 
 ## Technologies
