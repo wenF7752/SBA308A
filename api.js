@@ -65,3 +65,18 @@ export const fetchTop10Coins = async (params) => {
         throw error;
     }
 }
+
+export const fetchSignal = async (params) => {
+    try {
+        const response = await axiosInstance.get('/data/tradingsignals/intotheblock/latest', {
+            params: {
+                ...params,
+                api_key: API_KEY  // Include api_key in params
+            }
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error;
+    }
+}
